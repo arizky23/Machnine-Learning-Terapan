@@ -238,6 +238,6 @@ Metrik evaluasi yang akan kita gunakan pada prediksi ini adalah MSE atau Mean Sq
   <div><img src="https://user-images.githubusercontent.com/86810501/193842490-04277b31-4278-4a8d-82af-79cb66cc9f9b.jpg" width="450"/></div>
 
 - Membuat prediksi untuk pengujian terhadap MSE
-  <div><img src="https://user-images.githubusercontent.com/86810501/193842490-04277b31-4278-4a8d-82af-79cb66cc9f9b.jpg" width="450"/></div>
+  <div><img src="https://user-images.githubusercontent.com/86810501/193847377-093fd692-dd48-4ff5-8c32-7575ee87b3cc.jpg" width="450"/></div>
 
 Dari hasil evaluasi dapat dilihat bahwa model dengan algoritma Random Forest memiliki akurasi lebih tinggi tinggi dan tingkat error lebih kecil. Terlihat juga bahwa prediksi dengan model algoritma Random Forest memberikan hasil yang paling mendekati dibandingkan algoritma lainnya.
