@@ -4,7 +4,7 @@ Ini merupakan proyek pertama dari kelas _Machine Learning_ Terapan, yaitu Predic
 
 ## Domain Proyek
 
-Domain proyek yang saya pilih dalam proyek **Machine Learning** ini adalah mengenai **Transportasi Udara** dengan judul "Prediksi Harga Penerbangan".
+Domain proyek yang saya pilih dalam proyek _Machine Learning_ ini adalah mengenai **Transportasi Udara** dengan judul "Prediksi Harga Penerbangan".
 
 ### Latar Belakang
 
@@ -245,15 +245,31 @@ Pada tahap ini kita akan membuat tiga buah model _Machine Learning_ dengan algor
 
 Metrik evaluasi yang akan kita gunakan pada prediksi ini adalah MSE atau Mean Squared Error yang menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi. MSE didefinisikan sebagai persamaan berikut:
 
-<div><img src="https://user-images.githubusercontent.com/86810501/193841376-f9102890-9def-4239-8af4-7b743c62a044.jpg" width="450"/></div>
+_MSE_ = $$ 1 \over N sum\_{k=1}^N (y_i-y pred_i)^2 $$
 
-- Berikut hasil evaluasi pada proyek ini:
-  <div><img src="https://user-images.githubusercontent.com/86810501/193841996-ce3ad6f7-171b-44bc-8b55-637c4c1ee495.jpg" width="300"/></div>
+Keterangan:
 
-- Plot Metrik Mean Squared Error (MSE)
-  <div><img src="https://user-images.githubusercontent.com/86810501/193842490-04277b31-4278-4a8d-82af-79cb66cc9f9b.jpg" width="450"/></div>
+_N_ = jumlah dataset
+_yi_ = nilai sebenarnya
+_y pred_ = nilai prediksi
+
+Berikut hasil evaluasi pada proyek ini :
+
+- Hasil evaluasi pada proyek ini:
+
+|  model   |    train     |     test     |
+| :------: | :----------: | :----------: |
+|   KNN    | 13684.968264 | 15261.179694 |
+|    RF    | 13311.047334 | 14410.958053 |
+| Boosting | 36444.675468 | 36242.291304 |
+
+## Conclusion
+
+Model prediksi harga tiket penerbangan telah selesai dibuat dan model ini dapat digunakan untuk memprediksi data yang sebenarnya. Berdasarkan model tersebut dapat diketahui bahwa algoritma terbaik dalam model ini adalah _Random Forest_ & _K-Neighbor_ karena memiliki akurasi yang stabil baik itu pada data training maupun data testing (Good fits)
+
+![MSE](https://user-images.githubusercontent.com/86810501/193842490-04277b31-4278-4a8d-82af-79cb66cc9f9b.jpg)
 
 - Membuat prediksi untuk pengujian terhadap MSE
-  <div><img src="https://user-images.githubusercontent.com/86810501/193847377-093fd692-dd48-4ff5-8c32-7575ee87b3cc.jpg" width="450"/></div>
+  ![Prediksi terhadap MSE](https://user-images.githubusercontent.com/86810501/193847377-093fd692-dd48-4ff5-8c32-7575ee87b3cc.jpg)
 
-Dari hasil evaluasi dapat dilihat bahwa model dengan algoritma Random Forest memiliki akurasi lebih tinggi tinggi dan tingkat error lebih kecil. Terlihat juga bahwa prediksi dengan model algoritma Random Forest memberikan hasil yang paling mendekati dibandingkan algoritma lainnya.
+Dari model prediksi diatas dapat dilihat bahwa, model dengan algoritma _Random Forest_ memiliki akurasi lebih tinggi dan tingkat error lebih kecil. Sedangkan _K-Neighbor_ hampir mendekati tetapi memiliki tingkat eror yang lebih naik sedikit dari _Random Forest_. Namun dalam prediksi dengan model algoritma _Random Forest_ ini memberikan hasil yang paling mendekati dibandingkan algoritma lainnya.
