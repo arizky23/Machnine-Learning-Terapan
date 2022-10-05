@@ -1,10 +1,10 @@
 # Proyek Pertama Flight Price Prediction
 
-Ini merupakan proyek pertama dari kelas Machine Learning Terapan, yaitu Predictive Analytics. Proyek ini menganalisis suatu model machine learning untuk memprediksi harga sewa perumahan hingga bangunan apartemen yang berada di Negara India.
+Ini merupakan proyek pertama dari kelas _Machine Learning_ Terapan, yaitu Predictive Analytics. Proyek ini menganalisis suatu model _Machine Learning_ untuk memprediksi harga sewa perumahan hingga bangunan apartemen yang berada di Negara India.
 
 ## Domain Proyek
 
-Domain proyek yang saya pilih dalam proyek _Machine Learning_ ini adalah mengenai **Transportasi Udara** dengan judul "Prediksi Harga Penerbangan".
+Domain proyek yang saya pilih dalam proyek **Machine Learning** ini adalah mengenai **Transportasi Udara** dengan judul "Prediksi Harga Penerbangan".
 
 ### Latar Belakang
 
@@ -18,7 +18,7 @@ Perkembangan di bidang pariwisata menjadi sebuah daya tarik bagi seorang travell
 
 <br>
 
-Berdasarkan latar belakang permasalahan yang telah diuraikan sebelumnya, maka penulis membuat sebuah model Machine Learning dengan menggunakan algoritma K-Neighbor, Random Forest dan AdaBoost sehingga pihak maskapai dapat memprediksi penetapan harga tiket pesawat tepat berdasarkan kebutuhan konsumen atau pasar. Parameter yang digunakan dalam membuat sebuah model yaitu jenis pelayanan, rute penerbangan, durasi penerbangan dan pemberhentian tujuan pesawat tiap maskapai penerbangan. Dari model tersebut diambil algoritma dengan akurasi tertinggi yang akan digunakan untuk memprediksi penetapan tarif tiket pesawat yang akan dikonfigurasikan dengan Automated Machine Learning (AutoML).Dengan menggunakan model ini diperoleh hasil akurasi minimum di atas 83%.
+Berdasarkan latar belakang permasalahan yang telah diuraikan sebelumnya, maka penulis membuat sebuah model _Machine Learning_ dengan menggunakan algoritma K-Neighbor, Random Forest dan AdaBoost sehingga pihak maskapai dapat memprediksi penetapan harga tiket pesawat tepat berdasarkan kebutuhan konsumen atau pasar. Parameter yang digunakan dalam membuat sebuah model yaitu maskapai penerbangan, kode penerbangan, waktu keberangkatan, waktu tiba, destinasi penerbangan, kelas, durasi penerbangan dan pemberhentian tujuan pesawat tiap maskapai penerbangan. Dari model tersebut diambil algoritma dengan akurasi tertinggi yang akan digunakan untuk memprediksi penetapan tarif tiket pesawat yang akan dikonfigurasikan dengan _Machine Learning_.
 
 Pada proyek ini, data yang saya pakai adalah data prediksi harga penerbangan dengan 12 atribut sebagai parameter prediksi. Dalam Pelaksanaan penelitian ini dilakukan dengan menggunakan media bantu Google Colaboratory untuk membuat sebuah model data dengan algoritma K-Neighbor, RandomForest dan AdaBoost.
 
@@ -34,7 +34,7 @@ Proyek ini dibangun untuk perusahaan dengan karakteristik bisnis sebagai berikut
 
 Dengan banyaknya maskapai yang bersaing satu sama lain, maka maskapai berlomba untuk menjadi pilihan utama konsumen/pasar. Namun untuk mencapai hal tersebut, belum ada strategi maskapai yang dapat memprediksi harga tiket pesawat sesuai dengan kebutuhan pasar.
 
-- Bagaimana cara untuk memenuhi kebutuhan maskapai dalam penetapan harga tiket pesawat menggunakan Machine Learning?
+- Bagaimana cara untuk memenuhi kebutuhan maskapai dalam penetapan harga tiket pesawat menggunakan _Machine Learning_?
 
 ### Goals
 
@@ -45,19 +45,17 @@ Tujuan dari proyek ini adalah mendapatkan akurasi tertinggi yang akan digunakan 
 Untuk menyelesaikan masalah ini, saya akan mengajukan 3 solusi model _Machine Learning_ yang digunakan dalam model predictive analytics ini. berikut penjelasan dari model-model yang akan saya gunakan dalam proyek ini:
 
 - K-Neighbors
-  <br> K-nearest neighbor adalah salah satu algoritma machine learning yang bersifat supervised yang digunakan untuk mengklasifikasikan suatu data. Prinsip di balik metode nearest neighbor adalah menemukan sejumlah data training yang sudah ditentukan dan menghitung jarak yang paling dekat dengan jarak ke titik baru, serta memprediksi label dari data yang baru. Jumlah sampel dapat berupa konstanta yang ditentukan pengguna (k-nearest neighbor learning).
+  <br> K-nearest neighbor adalah salah satu algoritma Machine Learning yang bersifat supervised yang digunakan untuk mengklasifikasikan suatu data. Prinsip di balik metode nearest neighbor adalah menemukan sejumlah data training yang sudah ditentukan dan menghitung jarak yang paling dekat dengan jarak ke titik baru, serta memprediksi label dari data yang baru. Jumlah sampel dapat berupa konstanta yang ditentukan pengguna (k-nearest neighbor learning).
 
 - Random Forest
-  <br>Random forest (RF) adalah suatu algoritma yang digunakan pada klasifikasi data dalam jumlah yang besar. Klasifikasi random forest dilakukan melalui penggabungan pohon (tree) dengan melakukan training pada sampel data yang dimiliki. Penggunaan pohon (tree) yang semakin banyak akan mempengaruhi akurasi yang akan didapatkan menjadi lebih baik. Penentuan klasifikasi dengan random forest diambil berdasarkan hasil voting dari tree yang terbentuk. Pemenang dari tree yang terbentuk ditentukan dengan vote terbanyak. Pembangunan pohon (tree) pada random forest sampai dengan mencapai ukuran maksimum dari pohon data.
+  <br> Random forest (RF) adalah suatu algoritma yang digunakan pada klasifikasi data dalam jumlah yang besar. Klasifikasi random forest dilakukan melalui penggabungan pohon (tree) dengan melakukan training pada sampel data yang dimiliki. Penggunaan pohon (tree) yang semakin banyak akan mempengaruhi akurasi yang akan didapatkan menjadi lebih baik. Penentuan klasifikasi dengan random forest diambil berdasarkan hasil voting dari tree yang terbentuk. Pemenang dari tree yang terbentuk ditentukan dengan vote terbanyak. Pembangunan pohon (tree) pada random forest sampai dengan mencapai ukuran maksimum dari pohon data.
   ![Random_forest](https://miro.medium.com/max/724/0*f_qQPFpdofWGLQqc.png)
-
-## Data Collection
-
-Himpunan data berisi informasi tentang opsi pemesanan penerbangan dari situs Web Easemytrip untuk perjalanan penerbangan antara 6 kota metro teratas di India. Ada 300000 baris data dan 12 fitur dalam himpunan data yang dibersihkan. Dataset ini dapat diunduh di: [Kaggle : Flight Price Prediction](https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction?select=Clean_Dataset.csv).
 
 ## Data Understanding
 
 Data understanding adalah sebuah tahapan di dalam metodologi sains data dan pengembangan AI yang bertujuan untuk mendapatkan pemahaman awal mengenai data yang dibutuhkan untuk memecahkan permasalahan bisnis yang diberikan.
+
+Himpunan data berisi informasi tentang opsi pemesanan penerbangan dari situs Web Easemytrip untuk perjalanan penerbangan antara 6 kota metro teratas di India. Ada 300000 baris data dan 12 fitur dalam himpunan data yang dibersihkan. Dataset ini dapat diunduh di: [Kaggle : Flight Price Prediction](https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction?select=Clean_Dataset.csv).
 
 Berikut informasi pada dataset:
 
@@ -79,6 +77,8 @@ Berikut informasi pada dataset:
 9. Duration: Fitur berkelanjutan yang menampilkan jumlah keseluruhan waktu yang diperlukan untuk melakukan perjalanan antar kota dalam hitungan jam.
 10. Days Left: Ini adalah karakteristik turunan yang dihitung dengan mengurangi tanggal perjalanan berdasarkan tanggal pemesanan.
 11. Price: Target variabel menyimpan informasi harga tiket.
+
+## Data Preparation
 
 ## Univariate Analysis
 
@@ -121,7 +121,7 @@ Berikut analisis dari grafik di atas:
 - Rentang harga tiket penerbangan cukup tinggi, yaitu dari skala ratusan hingga 90000.
 - Rata-rata harga tiket penerbangan berada di 30000. Distribusi harga yang kurang bagus sehingga dapat berimplikasi pada model.
 
-## Univariate Analysis
+## Multivariate Analysis
 
 Multivariate Analysis menunjukkan hubungan antara dua atau lebih fitur dalam data.
 
@@ -183,7 +183,7 @@ Jika kita perhatikan kembali, pada beberapa fitur numerik di atas terdapat outli
 - Berikut adalah ilustrasi dan penjelasan nilai statistik pada boxplot
   <div><img src="https://user-images.githubusercontent.com/86810501/193832839-79f393aa-3039-4aa2-8ff4-63ff5cb0dc2f.jpg" width="450"/></div>
 
-Hal pertama yang perlu Kita perhatikan adalah membuat batas bawah dan batas atas. Untuk membuat batas bawah, kurangi Q1 dengan 1,5 _ IQR. Kemudian, untuk membuat batas atas, tambahkan 1.5 _ IQR dengan Q3.
+Hal pertama yang perlu Kita perhatikan adalah membuat batas bawah dan batas atas. Untuk membuat batas bawah, kurangi Q1 dengan 1.5 _ IQR. Kemudian, untuk membuat batas atas, tambahkan 1.5 _ IQR dengan Q3.
 
 - Berikut persamaannya:
   Batas bawah = Q1 - 1.5 _ IQR
@@ -192,40 +192,56 @@ Hal pertama yang perlu Kita perhatikan adalah membuat batas bawah dan batas atas
 ## Data Preparation
 
 - One Hot Encoding
-
-  One hot encoding adalah teknik mengubah data kategorik menjadi data numerik dimana setiap kategori menjadi kolom baru dengan nilai 0 atau 1. Fitur yang akan diubah menjadi numerik pada proyek ini adalah 'airline', 'source_city', 'departure_time', 'arrival_time', 'destination_city', dan 'class'.
+  <br> One hot encoding adalah teknik mengubah data kategorik menjadi data numerik dimana setiap kategori menjadi kolom baru dengan nilai 0 atau 1. Fitur yang akan diubah menjadi numerik pada proyek ini adalah 'airline', 'source_city', 'departure_time', 'arrival_time', 'destination_city', dan 'class'.
 
 - Train Test Split
-
-  Train test split aja proses membagi data menjadi data latih dan data uji. Data latih akan digunakan untuk membangun model, sedangkan data uji akan digunakan untuk menguji performa model. Pada proyek ini dataset sebesar 297920 dibagi sebesar 70:30 sehingga dapat jumlahnya menjadi 208544 untuk data latih dan 89376 untuk data uji.
+  <br> Train test split aja proses membagi data menjadi data latih dan data uji. Data latih akan digunakan untuk membangun model, sedangkan data uji akan digunakan untuk menguji performa model. Pada proyek ini dataset sebesar 297920 dibagi sebesar 70:30 sehingga dapat jumlahnya menjadi 208544 untuk data latih dan 89376 untuk data uji.
 
 - Standarisasi
+  <br> Standardisasi adalah teknik transformasi yang paling umum digunakan dalam tahap persiapan pemodelan. Untuk fitur numerik, kita tidak akan melakukan transformasi dengan one-hot-encoding seperti pada fitur kategori. Kita akan menggunakan teknik StandarScaler dengan sklearn.preprocessing.StandardScaler.
 
-  Standardisasi adalah teknik transformasi yang paling umum digunakan dalam tahap persiapan pemodelan. Untuk fitur numerik, kita tidak akan melakukan transformasi dengan one-hot-encoding seperti pada fitur kategori. Kita akan menggunakan teknik StandarScaler dengan sklearn.preprocessing.StandardScaler.
+## Modeling
 
-## Modeling Development
-
-Pada tahap ini kita akan membuat tiga buah model machine learning dengan algoritma berikut:
+Pada tahap ini kita akan membuat tiga buah model _Machine Learning_ dengan algoritma berikut:
 
 - K-Nearest Neighbor (KNN)
-  K-Nearest Neighbour bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat. Proyek ini menggunakan [sklearn.neighbors.KNeighborsRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini adalah:
+  <br> K-Nearest Neighbour bekerja dengan membandingkan jarak satu sampel ke sampel pelatihan lain dengan memilih sejumlah k tetangga terdekat. Proyek ini menggunakan [sklearn.neighbors.KNeighborsRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini adalah:
 
   - `n_neighbors` = Jumlah k tetangga tedekat.
 
+  Disini saya memasukkan n_neighbors atau k sebanyak 10 tetangga.
+
 - Random Forest
-  Algoritma random forest adalah teknik dalam machine learning dengan metode ensemble. Teknik ini beroperasi dengan membangun banyak decision tree pada waktu pelatihan. Proyek ini menggunakan [sklearn.ensemble.RandomForestRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini adalah :
+  <br> Algoritma random forest adalah teknik dalam _Machine Learning_ dengan metode ensemble. Teknik ini beroperasi dengan membangun banyak decision tree pada waktu pelatihan. Proyek ini menggunakan [sklearn.ensemble.RandomForestRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini adalah :
 
   - `n_estimators` = Jumlah maksimum estimator di mana boosting dihentikan.
+
+  Untuk n_estimators saya masukkan angka sebesar 50 estimator.
+
   - `max_depth` = Kedalaman maksimum setiap tree.
+
+  Untuk max_depth saya masukkan angka sebesar 16.
+
   - `random_state` = Mengontrol seed acak yang diberikan pada setiap base_estimator pada setiap iterasi boosting.
+
+  Untuk random_state saya masukkan angka sebesar 55.
+
   - `n_jobs` = Jumlah job yang digunakan secara paralel. Ia merupakan komponen untuk mengontrol thread atau proses yang berjalan secara paralel.
 
+  Untuk n_jobs diberikan nilai -1 yang artinya semua proses berjalan secara paralel.
+
 - AdaBoost
-  AdaBoost juga disebut Adaptive Boosting adalah teknik dalam machine learning dengan metode ensemble. Algoritma yang paling umum digunakan dengan AdaBoost adalah pohon keputusan (decision trees) satu tingkat yang berarti memiliki pohon Keputusan dengan hanya 1 split. Pohon-pohon ini juga disebut Decision Stumps. Algoritma ini bertujuan untuk meningkatkan performa atau akurasi prediksi dengan cara menggabungkan beberapa model sederhana dan dianggap lemah (weak learners) secara berurutan sehingga membentuk suatu model yang kuat (strong ensemble learner). Proyek ini menggunakan [sklearn.ensemble.AdaBoostRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostRegressor.html) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini adalah:
+  <br> AdaBoost juga disebut Adaptive Boosting adalah teknik dalam _Machine Learning_ dengan metode ensemble. Algoritma yang paling umum digunakan dengan AdaBoost adalah pohon keputusan (decision trees) satu tingkat yang berarti memiliki pohon Keputusan dengan hanya 1 split. Pohon-pohon ini juga disebut Decision Stumps. Algoritma ini bertujuan untuk meningkatkan performa atau akurasi prediksi dengan cara menggabungkan beberapa model sederhana dan dianggap lemah (weak learners) secara berurutan sehingga membentuk suatu model yang kuat (strong ensemble learner). Proyek ini menggunakan [sklearn.ensemble.AdaBoostRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostRegressor.html) dengan memasukkan X_train dan y_train dalam membangun model. Parameter yang digunakan pada proyek ini adalah:
+
   - `learning_rate` = Bobot yang diterapkan pada setiap regressor di masing-masing proses iterasi boosting.
+
+  Untuk learning_rate yang diterapkan adalah 0.05
+
   - `random_state` = Digunakan untuk mengontrol random number generator yang digunakan.
 
-## Evaluation Model
+  Untuk random_state saya masukkan angka sebesar 55.
+
+## Evaluation
 
 Metrik evaluasi yang akan kita gunakan pada prediksi ini adalah MSE atau Mean Squared Error yang menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi. MSE didefinisikan sebagai persamaan berikut:
 
