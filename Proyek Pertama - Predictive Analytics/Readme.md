@@ -245,13 +245,7 @@ Pada tahap ini kita akan membuat tiga buah model _Machine Learning_ dengan algor
 
 Metrik evaluasi yang akan kita gunakan pada prediksi ini adalah MSE atau Mean Squared Error yang menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi. MSE didefinisikan sebagai persamaan berikut:
 
-_MSE_ = $$ 1 \over N sum\_{k=1}^N (y_i-y pred_i)^2 $$
-
-Keterangan:
-
-_N_ = jumlah dataset
-_yi_ = nilai sebenarnya
-_y pred_ = nilai prediksi
+<div><img src="https://user-images.githubusercontent.com/86810501/193994956-4cb2df0a-2379-44fd-9f04-cec67983cbc3.jpg" width="300"/></div>
 
 Berikut hasil evaluasi pada proyek ini :
 
@@ -269,7 +263,8 @@ Model prediksi harga tiket penerbangan telah selesai dibuat dan model ini dapat 
 
 ![MSE](https://user-images.githubusercontent.com/86810501/193842490-04277b31-4278-4a8d-82af-79cb66cc9f9b.jpg)
 
-- Membuat prediksi untuk pengujian terhadap MSE
-  ![Prediksi terhadap MSE](https://user-images.githubusercontent.com/86810501/193847377-093fd692-dd48-4ff5-8c32-7575ee87b3cc.jpg)
+Hasil prediksi dari pengujian terhadap MSE
+
+![Prediksi terhadap MSE](https://user-images.githubusercontent.com/86810501/193847377-093fd692-dd48-4ff5-8c32-7575ee87b3cc.jpg)
 
 Dari model prediksi diatas dapat dilihat bahwa, model dengan algoritma _Random Forest_ memiliki akurasi lebih tinggi dan tingkat error lebih kecil. Sedangkan _K-Neighbor_ hampir mendekati tetapi memiliki tingkat eror yang lebih naik sedikit dari _Random Forest_. Namun dalam prediksi dengan model algoritma _Random Forest_ ini memberikan hasil yang paling mendekati dibandingkan algoritma lainnya.
