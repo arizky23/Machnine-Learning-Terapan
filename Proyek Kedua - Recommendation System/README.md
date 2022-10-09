@@ -46,27 +46,28 @@ Dataset yang saya gunakan adalah Book Recommendation Dataset. Dataset ini dapat 
 
 Variabel-variabel pada Book Recommendation Dataste adalah sebagai berikut:
 
-- Dataset pertama yaitu 'Books'. Dataset ini memiliki 8 buah kolom, yakni:
+Dataset pertama yaitu 'Books'. Dataset ini memiliki 8 buah kolom, yakni:
 
-  1. 'ISBN', merupakan identifikasi dari masing-masing buku.
-  2. 'Book-Title', merupakan judul buku.
-  3. 'Book-Author', merupakan penulis buku.
-  4. 'Year-Of-Publication', merupakan tahun dipublikasikannya buku.
-  5. 'Publisher', merupakan penerbit buku.
-  6. 'Image-URL-S', merupakan URL gambar cover buku dalam ukuran S(Small).
-  7. 'Image-URL-M', merupakan URL gambar cover buku dalam ukuran M(Medium).
-  8. 'Image-URL-L', merupakan URL gambar cover buku dalam ukuran L(Large).
+1. 'ISBN', merupakan identifikasi dari masing-masing buku.
+2. 'Book-Title', merupakan judul buku.
+3. 'Book-Author', merupakan penulis buku.
+4. 'Year-Of-Publication', merupakan tahun dipublikasikannya buku.
+5. 'Publisher', merupakan penerbit buku.
+6. 'Image-URL-S', merupakan URL gambar cover buku dalam ukuran S(Small).
+7. 'Image-URL-M', merupakan URL gambar cover buku dalam ukuran M(Medium).
+8. 'Image-URL-L', merupakan URL gambar cover buku dalam ukuran L(Large).
 
-- Dataset kedua yaitu 'Users'. Dataset ini memiliki 3 buah kolom, yakni:
+Dataset kedua yaitu 'Users'. Dataset ini memiliki 3 buah kolom, yakni:
 
-  1. 'User-ID', berisi ID pengguna dari toko buku online.
-  2. 'Location', berisi lokasi pengguna.
-  3. 'Age', berisi usia pengguna.
+1. 'User-ID', berisi ID pengguna dari toko buku online.
+2. 'Location', berisi lokasi pengguna.
+3. 'Age', berisi usia pengguna.
 
-- Dataset ketiga yaitu 'Ratings'. Dataset ini memiliki 3 buah kolom, yakni:
-  1. 'User-ID', yang berisi ID dari user yang memberikan rating terhadap buku.
-  2. 'ISBN', merupakan identifikasi buku atau nomor buku yang diberi rating oleh user.
-  3. 'Book-Rating', berisi nilai Rating dari buku, skala yang ada dalam rating ini yakni dari 0-10.
+Dataset ketiga yaitu 'Ratings'. Dataset ini memiliki 3 buah kolom, yakni:
+
+1. 'User-ID', yang berisi ID dari user yang memberikan rating terhadap buku.
+2. 'ISBN', merupakan identifikasi buku atau nomor buku yang diberi rating oleh user.
+3. 'Book-Rating', berisi nilai Rating dari buku, skala yang ada dalam rating ini yakni dari 0-10.
 
 Dalam tahap ini saya menggunakan proses _Univariate EDA(Exploratory Data Analysis)_ dengan menjabarkan masing-masing variabel yang sudah dijelaskan sebelumnya. Karena masing-masing dataset memiliki jumlah sangat banyak yakni lebih dari 250.000, maka saya hanya mengambil sebanyak 4500 data dari setiap variabel yang nantinya akan kita gunakan dalam proses pembuatan sistem rekomendasi ini.
 
