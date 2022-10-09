@@ -105,7 +105,18 @@ Berikut langkah yang digunakan dalam penerapan model dengan _Content-Based Filte
 7. Mendapatkan Rekomendasi.
    <br> Disini saya membuat fungsi dengan nama book_recommendations untuk mendapatkan rekomendasi dengan memasukan parameter berupa nama penulis buku, penulis yang saya masukkan ke dalam parameter tersebut ialah Andre Dubus III. Berikut adalah hasil rekomendasi yang saya dapatkan dari proses tersebut.
 
-   ![Hasil Rekomendasi](https://user-images.githubusercontent.com/86810501/194755268-2bbe4239-2d5d-4dac-9589-df03e857cc1a.jpg)
+   |     |     book_author     |               book_title                |
+   | :-: | :-----------------: | :-------------------------------------: |
+   |  0  | Mark Z. Danielewski |             House of Leaves             |
+   |  1  |   William Sleator   |             House of Stairs             |
+   |  2  |   James Patterson   |               The Jester                |
+   |  3  |   James Patterson   |               2nd Chance                |
+   |  4  |   James Patterson   |             The Beach House             |
+   |  5  |   James Patterson   | Along Came a Spider (Alex Cross Novels) |
+   |  6  |   James Patterson   |   Jack &amp; Jill (Alex Cross Novels)   |
+   |  7  |   James Patterson   |    Roses Are Red (Alex Cross Novels)    |
+   |  8  |   James Patterson   |            The Midnight Club            |
+   |  9  |   James Patterson   |              Black Friday               |
 
    Dari hasil rekomendasi di atas, kita telah mampu menampilkan 10 buku dengan kategori yang mirip dengan buku yang ditulis oleh Andre Dubus III tersebut.
 
@@ -120,13 +131,36 @@ Untuk solusi permasalahan kedua yaitu kita akan menggunakan teknik _Collaborativ
 7. Mendapatkan Rekomendasi.
    <br> Mendapatkan Rekomendasi Buku dengan cara definisikan variabel book_not_visited, dimana variabel ini merupakan daftar buku yang belum pernah dikunjungi oleh pengguna. Berikut adalah hasil rekomendasi yang saya dapatkan menggunakan teknik Collaborative Filtering.
 
-   ![rekomendasi](https://user-images.githubusercontent.com/86810501/194756287-b7548fe5-b795-4768-aa51-cd795285da38.jpg)
+   | Showing book by author recommendations for users: 277962                                     |
+   | -------------------------------------------------------------------------------------------- |
+   | ------------------------------------                                                         |
+   | Top 10 Book Author Recommendation                                                            |
+   | ------------------------------------                                                         |
+   | James Finn Garner : Politically Correct Bedtime Stories: Modern Tales for Our Life and Times |
+   | Sylvia Plath : The Bell Jar : A Novel (Perennial Classics)                                   |
+   | David Sedaris : Me Talk Pretty One Day                                                       |
+   | Andre Dubus III : House of Sand and Fog                                                      |
+   | OSCAR WILDE : The Picture of Dorian Gray (Modern Library (Paperback))                        |
+   | Sheri S. Tepper : The Family Tree                                                            |
+   | Maeve Binchy : This Year It Will Be Different: And Other Stories                             |
+   | K. A. Applegate : The Encounter (Animorphs , No 3)                                           |
+   | Jack Canfield : Chicken Soup for the Woman's Soul (Chicken Soup for the Soul Series (Paper)) |
+   | Carlos Ruiz Zafon : La Sombra del Viento                                                     |
 
    Hasil di atas adalah rekomendasi untuk user dengan id 277962. Dari output tersebut, kita telah memberikan rekomendasi buku berdasarkan pengarangnya.
 
 ## Evaluation
 
-Saya menggunakan metrik evaluasi dari _RMSE(root mean squarred error)_. RMSE ini merupakan besarnya tingkat kesalahan hasil prediksi, dimana semakin kecil (mendekati 0) nilai RMSE maka hasil prediksi akan semakin akurat. Berikut adalah hasil evaluasi menggunakan metode RMSE.
+**Content-Based Filtering**
+Di tahap ini saya menggunakan metrik evaluasi yang bernama _Presicion_. Precision adalah jumlah item rekomendasi yang relevan. Kita tidak bisa menghitung dengan memanggil library scikit learn karena tidak ada data target/label seperti pada supervised learning.
+
+![precision](https://user-images.githubusercontent.com/86810501/194769741-822c7221-ba85-44f8-8828-b3c163a277c4.jpg)
+
+Dari proses ini, kita berhasil memberikan rekomendasi berupa 10 judul buku dengan kategori book_authornya adalah Mark Z. Danielwski, William Sleator, dan James Patterson.
+
+**Collaborative Filtering**
+
+Di tahap ini saya menggunakan metrik evaluasi yang bernama _RMSE(root mean squarred error)_. RMSE ini merupakan besarnya tingkat kesalahan hasil prediksi, dimana semakin kecil (mendekati 0) nilai RMSE maka hasil prediksi akan semakin akurat. Berikut adalah hasil evaluasi menggunakan metode RMSE.
 
 ![metrik evaluasi](https://user-images.githubusercontent.com/86810501/194756059-f04633ad-7d36-4f1e-9547-ebcbc8263688.jpg)
 
