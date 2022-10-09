@@ -6,7 +6,7 @@ Sistem rekomendasi adalah salah satu fitur pada sebuah perangkat lunak yang sang
 
 Teknik untuk sebuah sistem rekomendasi pada buku yang telah ada adalah Content-Based Filtering dan Collaborative Filtering. Content-Based Filtering merupakan teknik untuk mempelajari profil minat pengguna baru berdasarkan data dari objek yang telah dinilai sebelumnya oleh pengguna. Sedangkan, Collaborative Filtering bergantung pada pendapat komunitas pengguna. Ia tidak memerlukan atribut untuk setiap itemnya seperti pada sistem berbasis konten.
 
-[CBF&CF](https://miro.medium.com/max/4056/1*KBriLd3AYrLuULCqdffxCQ.png)
+![CF CBF](https://user-images.githubusercontent.com/86810501/194766309-cb8efe3e-c260-4d3c-a28a-87d6479357ee.jpg)
 
 Pada proyek ini, data yang saya pakai adalah data rekomendasi buku yang dimana ini penting untuk diselesaikan. Karena dapat memudahkan pelanggan untuk melihat rekomendasi buku lain ketika berbelanja di toko buku secara online. Dengan membaca pola data, mudah bagi kita merekomendasikan buku kepada seorang pelanggan. Selain dapat membantu pengguna dalam memberikan referensi buku, kita juga mendapatkan keuntungan dalam meningkatkan minat berbelanja dan keingin-tahuan pelanggan terhadap buku yang direkomendasikan sehingga tingkat penjualan pun akan meningkat.
 
@@ -33,10 +33,12 @@ Tujuan dari proyek ini adalah:
 Dalam proyek ini kita akan menggunakan dua teknik sistem rekomendasi untuk menyelesaikan permasalahan tersebut. Dua teknik tersebut adalah Content-Based Filtering dan Collaborative Filtering.
 
 - **Content-Based Filtering** adalah merekomendasikan item yang mirip dengan item yang disukai pengguna di masa lalu. teknik ini mempelajari profil minat pengguna baru berdasarkan data dari objek yang telah dinilai pengguna. teknik ini bekerja dengan menyarankan item serupa yang pernah disukai di masa lalu atau sedang dilihat di masa kini kepada pengguna. Semakin banyak informasi yang diberikan pengguna, semakin baik akurasi sistem rekomendasi tersebut.
-  ![CBF](https://socital.com/wp-content/uploads/2019/09/content-based-filtering-2.png)
+
+![CBF](https://user-images.githubusercontent.com/86810501/194766480-230f6174-d62b-4cc6-b6e6-e5f55d36f09b.jpg)
 
 - **Collaborative Filtering** adalah salah satu teknik rekomendasi yang popular yang prediksi dan rekomendasinya berbasis pada nilai _rating_ atau tingkah laku dari pengguna lain dalam sistem tersebut. Kelebihan dari teknik ini adalah memungkinkan pengguna aktif untuk mendapatkan rekomendasi berdasarkan produk yang pengguna telah beli dan diberi _rating_ positif. Dan dengan menggunakan _rating_, pengguna aktif dan riwayat transaksi untuk membangun model yang menyediakan satu set baru produk serupa. Namun kekurangan pada teknik ini adalah penggunanya tidak bisa memilih pengguna mana yang ingin dijadikan acuan agar mendapatkan rekomendasi produk yang diinginkan.
-  ![CF](https://socital.com/wp-content/uploads/2019/09/Collaborative-filtering.jpg)
+
+![CF](https://user-images.githubusercontent.com/86810501/194766482-8d2b0154-daf5-4129-9985-3f940597534f.jpg)
 
 ## Data Understanding
 
@@ -101,6 +103,7 @@ Berikut langkah yang digunakan dalam penerapan model dengan _Content-Based Filte
 6. Membuat dataframe dari variabel cosine_sim dengan baris dan kolom berupa author buku.
 7. Mendapatkan Rekomendasi.
    <br> Disini saya membuat fungsi dengan nama book_recommendations untuk mendapatkan rekomendasi dengan memasukan parameter berupa nama penulis buku, penulis yang saya masukkan ke dalam parameter tersebut ialah Andre Dubus III. Berikut adalah hasil rekomendasi yang saya dapatkan dari proses tersebut.
+
    ![Hasil Rekomendasi](https://user-images.githubusercontent.com/86810501/194755268-2bbe4239-2d5d-4dac-9589-df03e857cc1a.jpg)
 
    Dari hasil rekomendasi di atas, kita telah mampu menampilkan 10 buku dengan kategori yang mirip dengan buku yang ditulis oleh Andre Dubus III tersebut.
@@ -115,6 +118,7 @@ Untuk solusi permasalahan kedua yaitu kita akan menggunakan teknik _Collaborativ
 6. Melakukan proses training dengan menggunakan fungsi .fit() dan parameternya yaitu batch_size = 8 serta epochsnya sebanyak 100. Berikut adalah hasil dari metrik evaluasi menggunakan library matplotlib.
 7. Mendapatkan Rekomendasi.
    <br> Mendapatkan Rekomendasi Buku dengan cara definisikan variabel book_not_visited, dimana variabel ini merupakan daftar buku yang belum pernah dikunjungi oleh pengguna. Berikut adalah hasil rekomendasi yang saya dapatkan menggunakan teknik Collaborative Filtering.
+
    ![rekomendasi](https://user-images.githubusercontent.com/86810501/194756287-b7548fe5-b795-4768-aa51-cd795285da38.jpg)
 
    Hasil di atas adalah rekomendasi untuk user dengan id 277962. Dari output tersebut, kita telah memberikan rekomendasi buku berdasarkan pengarangnya.
@@ -122,6 +126,7 @@ Untuk solusi permasalahan kedua yaitu kita akan menggunakan teknik _Collaborativ
 ## Evaluation
 
 Saya menggunakan metrik evaluasi dari _RMSE(root mean squarred error)_. RMSE ini merupakan besarnya tingkat kesalahan hasil prediksi, dimana semakin kecil (mendekati 0) nilai RMSE maka hasil prediksi akan semakin akurat. Berikut adalah hasil evaluasi menggunakan metode RMSE.
+
 ![metrik evaluasi](https://user-images.githubusercontent.com/86810501/194756059-f04633ad-7d36-4f1e-9547-ebcbc8263688.jpg)
 
 Dari proses ini, kita memperoleh nilai error akhir pada data latih sebesar sekitar 0.13 dan error pada data validasi sebesar 0.38. Nilai tersebut cukup bagus untuk sebuah sistem rekomendasi.
