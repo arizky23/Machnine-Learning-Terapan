@@ -44,7 +44,7 @@ Dalam proyek ini kita akan menggunakan dua teknik sistem rekomendasi untuk menye
 
 Dataset yang saya gunakan adalah Book Recommendation Dataset. Dataset ini dapat diunduh di: [Kaggle : Book Recommendation Dataset](https://www.kaggle.com/datasets/arashnic/book-recommendation-dataset?select=Books.csv). Dataset memiliki 3 file berformat CSV (Comma-Seperated Values) di dalamnya yaitu Books, Ratings, dan Users.
 
-Variabel-variabel pada Book Recommendation Dataste adalah sebagai berikut:
+#### Variabel-variabel pada Book Recommendation Dataste adalah sebagai berikut:
 
 Dataset pertama yaitu 'Books'. Dataset ini memiliki 8 buah kolom, yakni:
 
